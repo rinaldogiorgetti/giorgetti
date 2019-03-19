@@ -1,4 +1,4 @@
-hexchat.register("rispondi", "1", "script bellissimo")
+hexchat.register("cmdfromanytext", "1", "script bellissimo")
 
 local function splayalert go()
 
