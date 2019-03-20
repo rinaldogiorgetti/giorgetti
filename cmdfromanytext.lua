@@ -1,15 +1,14 @@
-hexchat.register("cmdfromanytext", "1", "script bellissimo")
+hexchat.register("rispondi", "1", "script bellissimo")
 
-local function splayalert go()
+local function go()
 
 	hexchat.hook_print("!alert", splayalert)
 
 end
 
 local function splayalert()
-	
-	hexchat.command(say tuttofatto)
-	hexchat.command(splay alert.wav)
+	hexchat.print(cistoprovando)
+	hexchat.command ("splay alert.wav")
 	
 	return hexchat.EAT_ALL
 
