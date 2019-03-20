@@ -2,7 +2,7 @@ hexchat.register("rispondi", "1", "script bellissimo")
 
 local function go()
 
-	hexchat.hook_print("!alert", splayalert)
+	hexchat.hook_print("channel message", splayalert)
 
 end
 
