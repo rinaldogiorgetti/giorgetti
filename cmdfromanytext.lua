@@ -12,6 +12,3 @@ local function splayalert(word)
 	return hexchat.EAT_NONE
 	end
 	end
-
-
-hexchat.hook_print("Channel Message", splayalert)
