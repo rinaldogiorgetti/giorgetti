@@ -1,13 +1,9 @@
-hexchat.register("rispondi", "8", "script bellissimo")
+hexchat.register("rispondi", "2", "script bellissimo")
 
 local function splayalert(word)
-	hexchat.print(word[2],"primo")
-	hexchat.command("say dico")
-	hexchat.command("say dico2")
-	hexchat.command("splay alert.wav")
-	if "word[2]" == "!alert" then
-	hexchat.command ("say dicobene")
-	hexchat.print(word[2], "sisi")
+	if word[2] == "!alert" then
+	hexchat.command ("say ALLERTA!!")
+	hexchat.command (splay "alert.wav")
 	else
 	return hexchat.EAT_NONE
 	end
